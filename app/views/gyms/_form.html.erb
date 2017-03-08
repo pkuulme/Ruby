@@ -11,17 +11,17 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :Date %>
+  <div class="field", align="center">
+    <%= f.label :Date %><br>
     <%= f.text_field :Date %>
   </div>
 
-  <div class="field">
-    <%= f.label :Workout %>
-    <%= f.text_area :Workout %>
+  <div class="field", align="center">
+    <%= f.label :Workout %><br>
+    <%= f.text_area :Workout, size:"30x10" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit %>
+  <div class="actions", align="center">
+    <%= f.submit "Submit a  Workout" %>
   </div>
 <% end %>
