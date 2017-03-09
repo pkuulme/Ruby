@@ -13,9 +13,9 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: sbadmin
-  password: password
-  host: 127.0.0.1
+  username: root
+  password: peep
+  host: localhost
   socket: mysql
   port: 4000
 
