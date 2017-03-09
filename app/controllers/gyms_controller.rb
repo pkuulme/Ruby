@@ -56,7 +56,7 @@ class GymsController < ApplicationController
   def destroy
     @gym.destroy
     respond_to do |format|
-      format.html { redirect_to gyms_url, notice: 'Workout was successfully destroyed.' }
+      format.html { redirect_to @gym, notice: 'Workout was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

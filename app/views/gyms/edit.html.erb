@@ -1,8 +1,9 @@
 <h1>Editing Workout</h1>
 
+
 <%= render 'form', gym: @gym %>
 
-<%= link_to 'Show', @gym %> |
-<%= link_to 'Back', gyms_path %>
+<p id ="show", align="center"><%= link_to 'Show', @gym, {:style => 'color:#FFF'}%> |
+<%= link_to 'Back', gyms_path, {:style => 'color:#FFF'} %>
 
 

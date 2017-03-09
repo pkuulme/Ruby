@@ -13,3 +13,43 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    background-image: url("gym_picture.jpg");
+    color: #ffffff ;
+    font-size: 100%;
+
+}
+
+table {
+	border-collapse: collapse;
+	color: #0d0d0d;
+}
+
+h1 {
+	padding: 10px;
+}
+
+table tr td{
+	padding: 10px;
+
+}
+
+thead {
+	text-align: center;
+	background: #80bfff;
+	color: #FFF;
+}
+
+thead th {
+	padding: 10px;
+
+}
+
+.list_line_odd{
+	background: #FAEBD7;
+}
+
+.list_line_even{
+	background: #FEFEFA;
+}
