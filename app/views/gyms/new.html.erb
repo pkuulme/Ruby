@@ -1,9 +1,7 @@
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %> 
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %> 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %> 
 <body>
-<h1 align="center">New Workout</h1>
-
-<p id ="new_one", align="center"><%= render 'form', gym: @gym %>
-
+<h1>New Workout</h1>
+<p id ="new_one" ><%= render 'form', gym: @gym %>
 <p id ="new_two", align="center"><%= link_to 'Back', gyms_path, {:style => 'color:#FFF'} %>
 </body>
