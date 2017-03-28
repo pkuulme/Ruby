@@ -10,20 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170307210639) do
-
-  create_table "gyms", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "Date"
-    t.string   "Workout"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+ActiveRecord::Schema.define(version: 20_170_307_210_639) do
+  create_table 'gyms', force: :cascade, options: 'ENGINE=InnoDB DEFAULT CHARSET=utf8' do |t|
+    t.string   'Date'
+    t.string   'Workout'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
   end
-
-  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "password"
-    t.string   "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
 end

@@ -5,17 +5,17 @@ class GymsControllerTest < ActionDispatch::IntegrationTest
     @gym = gyms(:one)
   end
 
-  test "should get index" do
+  test 'should get index' do
     get gyms_url
     assert_response :success
   end
 
-  test "should get new" do
+  test 'should get new' do
     get new_gym_url
     assert_response :success
   end
 
-  test "should create gym" do
+  test 'should create gym' do
     assert_difference('Gym.count') do
       post gyms_url, params: { gym: { Date: @gym.Date, Workout: @gym.Workout } }
     end
@@ -23,22 +23,22 @@ class GymsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to gym_url(Gym.last)
   end
 
-  test "should show gym" do
+  test 'should show gym' do
     get gym_url(@gym)
     assert_response :success
   end
 
-  test "should get edit" do
+  test 'should get edit' do
     get edit_gym_url(@gym)
     assert_response :success
   end
 
-  test "should update gym" do
+  test 'should update gym' do
     patch gym_url(@gym), params: { gym: { Date: @gym.Date, Workout: @gym.Workout } }
     assert_redirected_to gym_url(@gym)
   end
 
-  test "should destroy gym" do
+  test 'should destroy gym' do
     assert_difference('Gym.count', -1) do
       delete gym_url(@gym)
     end
